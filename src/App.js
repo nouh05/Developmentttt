@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import politicianInfo from "./assets/politician-info.json";
+import {PoliticianItem} from "./components/PoliticianItem.js"
+import { useEffect, useState } from 'react';
+import { Checkbox, Collapse } from 'antd';
+import { propTypes } from "react-bootstrap/esm/Image";
+import CheckBox from '/Users/noahatanda/Desktop/uiux/Development-Anonymous/src/components/CheckBox.js'
 
+import Display from '/Users/noahatanda/Desktop/uiux/Development-Anonymous/src/components/Display.js'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Display/>
   );
 }
 
